@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  
+</head>
+
+<body>
+    <h1 class="jumbotron">Traintime</h1>
+
+    <div class="container-fluid>">
+        <table class="table">
+            <h5>Current Train Schedule</h5>
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Train name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (mins)</th>
+                    <th scope="col">Next arrival</th>
+                    <th scope="col">Minutes away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
+        <form>
+            <h5>Add Train</h5>
+            <div class="form-group">
+                <label for="input-train-name">Train Name</label>
+                <input type="text" class="form-control" id="input-train-name" placeholder="Train Name">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="input-destination" placeholder="Destination">
+            </div>
+            <div class="form-group">
+                <label for="first-train-time">First Train Military Time</label>
+                <input type="text" class="form-control" id="input-first-train-time" placeholder="Example 19:30">
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency</label>
+                <input type="number" class="form-control" id="input-frequency" placeholder="Frequency (minutes)">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/logic.js"></script>
+</body>
+
+</html>

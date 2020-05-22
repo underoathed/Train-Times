@@ -1,0 +1,10 @@
+body{
+    margin: 50px;
+}
+
+.jumbotron{
+    text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 80px;
+    background-color: blanchedalmond;
+}
